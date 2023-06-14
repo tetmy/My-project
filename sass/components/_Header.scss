@@ -1,0 +1,110 @@
+.root {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    left: 0;
+}
+.Header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.Top-menu {
+    width: 70%;
+    height: 80px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.Top-menu:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.Navbar-logo {
+    display: inline-block;
+    height: 24px;
+    margin-left: 20px;
+    margin-top: 28px;
+    margin-bottom: 28px;
+    margin-right: 20px;
+}
+.Menu-main {
+    list-style: none;
+    height: 30px;
+}
+.Menu-main li {
+    display: inline-block;
+}
+@mixin aItems {
+    font-family: 'Karla';
+    text-transform: uppercase;
+    color: var(--black-color);
+}
+.Menu-main a {
+    text-decoration: none;
+    display: block;
+    position: relative;
+    font-size: 15px;
+    letter-spacing: 2px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    margin-right: 10px;
+    margin-left: 10px;
+    @include aItems;
+}
+.Menu-main a::before {
+    content: "";
+    width: 9px;
+    height: 9px;
+    position: absolute;
+    left: 50%;
+}
+
+
+.Cart {
+    list-style: none;
+    height: 26px;
+    margin-left: 20px;
+}
+.Cart li {
+    display: inline-block;
+}
+
+.Cart a {
+    text-decoration: none;
+    display: block;
+    position: relative;
+    font-size: 15px;
+    @include aItems;
+}
+.Basket {
+    height: 20px;
+}
+.Name {
+    height: 18px;
+    margin-left: 10px;
+    margin-right: 8px;
+}
+.Amount {
+    height: 17px;
+    width: 17px;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+.CoffeeStyle {
+    width: 112px;
+    height: 24px;
+    align-self: start;
+}
+
+
+
+
+
+

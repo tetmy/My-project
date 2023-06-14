@@ -1,0 +1,415 @@
+.Container {
+    background-color: black;
+    height: 530px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.Container .Img {
+    position: absolute;
+}
+.Container .Home p {
+    position: relative;
+    margin: 0;
+    text-align: center;
+}
+.Container .Home .Button {
+    position: relative;
+    text-align: center;
+    margin: 50px;
+}
+.Img {
+    height: 530px;
+}
+.Home {
+    height: 212px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+@mixin mainItems {
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+}
+.Place {
+    @include mainItems;
+    height: 18px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.Paragraph {
+    @include mainItems;
+    height: 60px;
+    font-size: 47px;
+    line-height: 60px;
+    margin-bottom: 10px;
+}
+.System {
+    @include mainItems;
+    height: 30px;
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 37px;
+}
+
+.Button {
+    height: 18px;
+    width: 231px;
+    color: #1d1f2e;
+    text-transform: uppercase;
+    box-shadow: 0px 2px 6px rgba(29, 31, 46, 0.1);
+}
+.Text {
+    width: 658px;
+    height: 262px;
+    text-align: center;
+    border: 1px solid black;
+    margin-left: 391px;
+    margin-right: 391px;
+    margin-top: 120px;
+    margin-bottom: 100px;
+    justify-self: center;
+    align-self: center;
+}
+.Title {
+    width: 578px;
+    height: 80px;
+    margin-top: 3px;
+    margin-left: 40px;
+    margin-right: 40px;
+    font-size: 28px;
+    color: #1d1f2e;
+    font-family: "Karla";
+    font-weight: 400;
+    line-height: 40px;
+}
+.Paradisematic {
+    width: 658px;
+    height: 112px;
+    margin-top: 16px;
+    margin-bottom: 21px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: rgba(29, 31, 46, 0.7);
+}
+.Story {
+    width: 133px;
+    height: 30px;
+    margin-top: 0px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28px;
+    color: #a25f4b;
+    text-decoration: underline;
+}
+.Featured {
+    width: 940px;
+    height: 18px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+.Rectangle-1 {
+    width: 30px;
+    height: 1px;
+    background: #ececed;
+    border-radius: 0px;
+}
+.Featured-Muggs {
+    display: inline-block;
+    width: 400px;
+    height: 18px;
+    @include mainItems;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #1d1f2e;   
+}
+.Pink-Golden {
+    width: 960px;
+    height: 657px;
+    margin: 0 auto;
+    padding: 0 5px;
+    display: flex;
+    justify-content: center;
+}
+.Pink-Golden li {
+    flex: 1 1 auto;
+    margin: 0 5px;
+    width: 480px;
+    height: 653px;
+}
+.Text-decoration {
+    height: 30px;
+    margin-bottom: 5px;
+    margin-top: 35px;
+    @include mainItems;
+    font-size: 20px;
+    line-height: 30px;
+    color: #1d1f2e; 
+}
+.Text-price {
+    @include mainItems;
+    font-size: 16px;
+    line-height: 28px;
+    color: rgba(29, 31, 46, 0.7);
+    margin-bottom: 15px;
+    height: 28px;
+}
+.Text-no-price {
+    @include mainItems;
+    font-size: 16px;
+    line-height: 28px;
+    text-decoration-line: line-through;
+    color: rgba(29, 31, 46, 0.4);
+}
+.Text-now-price {
+    @include mainItems;
+    font-size: 20px;
+    line-height: 32px;
+    color: #a25f4b;
+}
+.Choose-Cup {
+    width: 960px;
+    height: 1633px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.Choose-Cup ul li {
+    flex-basis: 30%;
+    width: 316.3px;
+    height: 493px;
+    position: relative;
+}
+.Choose-Cup img {
+    width: 300px;
+    height: 380px;
+}
+.Get-Coffee {
+    width: 940px;
+    height: 280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.Get-Coffee ul li {
+    position: relative;
+}
+.Book {
+    width: 280px;
+    height: 280px;
+    margin-right: 20px;
+}
+.Cup {
+    width: 160px;
+    height: 280px;
+    margin-right: 20px;
+}
+.Cup img {
+    margin: 5px;
+}
+.Offer {
+    width: 460px;
+    height: 273px;
+    margin-right: 0;
+    margin-left: 60px;
+}
+.Premium-offer {
+    width: 137px;
+    height: 18px;
+    font-family: "Karla";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #1d1f2e;
+}
+.Coffee-magazine {
+    width: 237px;
+    height: 100px;
+    font-family: "Karla";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 50px;
+    color: #1d1f2e;
+    margin-top: 14px;
+    margin-bottom: 15px;
+}
+.Furniture {
+    width: 353px;
+    height: 56px;
+    font-family: "Karla";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: rgba(29, 31, 46, 0.7);
+    margin-bottom: 29px;
+}
+.Start {
+    width: 173px;
+    height: 35px;
+    background: #1d1f2e;
+    margin-bottom: 9.5px;
+    color: white;
+    text-transform: uppercase;
+    @include mainItems;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 2px;
+}
+.Big-Photo {
+    width: 100%;
+    object-fit: cover;
+    height: 340px;
+    margin-top: 130px;
+}
+
+.Behind {
+    height: 721px;
+}
+.Stories {
+    max-width: 100%;
+    height: 603px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.Stories li {
+    flex-basis: 10%;
+    display: block;
+}
+
+.Questions {
+    margin-top: 25px;
+    margin-bottom: 14px;
+    font-family: "Karla";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: #1d1f2e;
+}
+.Country {
+    font-family: "Karla";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: rgba(29, 31, 46, 0.7);
+}
+.Date {
+    margin-top: 16px;
+    margin-bottom: 48px;
+    font-family: "Karla";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #1d1f2e;
+}
+.Sign-in {
+    height: 327px;
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.Blog {
+    height: 162px;
+}
+.Row {
+    height: 18px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+.Coffee-Bugs {
+    display: inline-block;
+    height: 18px;
+    @include mainItems;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #fbfbfb;
+}
+.Updates {
+    height: 50px;
+    @include mainItems;
+    font-size: 36px;
+    line-height: 50px;
+    color: #ffffff;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    margin-left: 343px;
+    margin-right: 344px;
+}
+.Contact {
+    box-sizing: border-box;
+    width: 490px;
+    height: 54px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+.E-mail {
+    width: 350px;
+    height: 54px;
+    border: 1px solid rgba(166, 167, 168, 0.7);
+    @include mainItems;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.E-mail,
+.Subscribe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Subscribe {
+    width: 129px;
+    height: 54px;
+    background: #ffffff;
+    box-shadow: 0px 2px 6px rgba(29, 31, 46, 0.1);
+    @include mainItems;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+
